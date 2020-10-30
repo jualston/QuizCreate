@@ -1,4 +1,4 @@
-quiz= [
+ [
 	{
 	 question: "how many days are there in a week?",
 	 options: ["1","2","3","7"],
