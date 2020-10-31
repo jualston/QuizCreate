@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+  <script src="quiz.js"></script>
+  <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+  <div id='container'>
+
+    <script id ="view_widget" class="align-items-center" type="text/x-handlebars-template">
+    <div>
+      <h1>Please enter your name</h1>
+      <input type="text"/>
+      <h2> Select quiz </h2>
+      <select id = "quiz_selector">
+
+        <option value="1" >Quiz 1</option>
+        <option value="2" >Quiz 2</option>
+
+      </select>
+      <button class='button' id='start-button' data-start="Start">Start Quiz</button>
+      </div>
+    </script>
+    <div id= "app_wid"> </div>
+
+
+
+<script id="quiz_view" type="text/x-handlebars-template">
+<div>
+  <h1>{{this.question}}</h1>
+  <button class = "btn btn-primary" data-answer="{{this.options.[0]}}">{{this.options.[0]}}</button>
+  <button class = "btn btn-primary" data-answer="{{this.options.[1]}}">{{this.options.[1]}}</button>
+  <button class = "btn btn-primary" data-answer="{{this.options.[2]}}">{{this.options.[2]}}</button>
+  <button class = "btn btn-primary" data-answer="{{this.options.[3]}}">{{this.options.[3]}}</button>
+</div>
+
+
+  </script>
+
+
+    <script id =" multichoice" type=" text/x-handlebars-template">
+    <button class = "btn btn-primary " >{{this.choice[0]}}
+    <button class = "btn btn-primary ">{{this.choice[1]}}
+    <button class = "btn btn-primary ">{{this.choice[2]}}
+    <button class = "btn btn-primary">{{this.choice[3]}}
+    </script>
+    <script id = "showfeedback" type ="text/x-handlebars-template">
+
+      <p> Great job<p>
+        <button class = "btn btn-primary" data-feed="feed1">ok</button>
+
+
+    </script>
+    <script id = "wrongAnswer" type ="text/x-handlebars-template">
+
+      <p> sorry the correct answer is {{this.options.answer}}<p>
+        <button class = "btn btn-primary" data-feed="feed">ok</button>
+
+
+    </script>
+    <script id = "qresults" type ="text/x-handlebars-template">
+      <h1> your score is {{this.state.currentScore}} out of 20</h1>
+    </script>
+    <div id='title'>
+
+    </div>
+    <br/>
+    <div id='quiz'></div>
+
+
+    <!-- <button class='' id='next'>Next</a></button>
+    <button class='' id='prev'>Prev</a></button>
+    <button class='' id='start'> Start Over</a></button> -->
+  </div>
+</body>
+</html>
