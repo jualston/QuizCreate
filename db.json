@@ -1,40 +1,120 @@
-{
-"questions": [
-{
-"question": "What is the scientific name of a butterfly?",
-"options": [
-"Apis",
-"Coleoptera",
-"Formicidae",
-"Rhopalocera"
-],
-"ansewer": 3
-},
-{
-"question": "How hot is the surface of the sun?",
-"options": [
-"1,233 K",
-"5,778 K",
-"12,130 K",
-"101,300 K"
-],
-"answer": 1
-},
-{
-"question": "Who are the actors in The Internship?",
-"options": [
-"Ben Stiller, Jonah Hill",
-"Courteney Cox, Matt LeBlanc",
-"Kaley Cuoco, Jim Parsons",
-"Vince Vaughn, Owen Wilson"
-],
-"answer": 3
-},
-{
-"question": "What is the capital of Spain?",
-"options": [
-"Berlin",
-"Buenos Aires",
+quiz1= [
+	{
+	 question: "What is the most common computer language?",
+	 options: ["Java","R","Python","C++"],
+	 answer: "Java"
+
+ },
+ {
+	 question: "Public static void (what goes in here)",
+	 options: ["String[]args","String args[]","Boolean [args]","String[args]"],
+	 answer:"String[]args"
+
+ },
+ {
+	question: "what is the size of a double variable?",
+	options: ["8bit","16bit","32bit","64bit"],
+	answer: "64bit"
+
+ },
+ {
+	question: "What is the default value of byte variable?",
+	options: ["0","0.0","null","undefined"],
+	answer: "0"
+
+ },
+ {
+	question: "Which method must be implemented by all threads?",
+	options: ["run()","wait()","start()","wait()"],
+	answer: "run()"
+
+ },
+ {
+	question: "Which of the following creates a List of 3 visible items and multiple selections abled?",
+	options: ["new List(false, 3)","new List(3, true)","new List(true, 3)","new List(3, false)"],
+	answer: "new List(3, true)"
+
+ },
+
+ {
+	question: "Which of the following is true about the anonymous inner class?",
+	options: ["It has only methods","Objects can't be created","It has a fixed class name","It has no class name"],
+	answer: "It has no class name"
+
+ },
+ {
+	question: "Which package contains the Random class?",
+	options: ["java.util package","java.lang package","java.awt package","java.io package"],
+	answer: "java.util package"
+
+ },
+ {
+	question: " which memory a String is stored, when we create a string using new operator?",
+	options: ["Stack","String memory","Heap memory","Random storage space"],
+	answer: "Heap memory"
+
+ },
+ {
+	question: "What is the initial quantity of the ArrayList list?",
+	options: ["5","10","0","100"],
+	answer: "10"
+
+ },
+ {
+	question: "Which of the following is a mutable class in java?",
+	options: ["java.lang.String","java.lang.Byte","ava.lang.Short","java.lang.StringBuilder"],
+	answer: "java.lang.StringBuilder"
+
+ },
+ {
+	question: "How many threads can be executed at a time?",
+	options: ["Only one thread","Multiple threads","Only main (main() method) thread","Two threads"],
+	answer: "Multiple threads"
+
+ },
+ {
+	question: "What does html stand for?",
+	options: ["Home Tool Markup Language","Hyperlinks and Text Markup Language","Hyper Text Markup Language","html"],
+	answer: "Hyper Text Markup Language"
+
+ },
+ {
+	question: "What is the correct sequence of HTML tags for starting a webpage?",
+	options: ["Head, Title, HTML","Title, Head, HTML","HTML, Head, Title","head shoulders knees and toes"],
+	answer: "HTML, Head, Title"
+
+ },
+ {
+	question: " What is the correct HTML tag for inserting a line break?",
+	options: ["Br","Break","Lb","bk"],
+	answer: "Br"
+
+ },
+ {
+	question: "How can you make a list that lists the items with numbers?",
+	options: ["Ol","Dl","Ul","List"],
+	answer: "Ol"
+
+ },
+ {
+	question: "which course is this?",
+	options: ["CUS1163","CUS1189","CUS1116","CUS1172"],
+	answer: "CUS1172"
+
+ },
+ {
+	question: "Which type  would you use to declare a number with a decimal ",
+	options: ["long","int","String","double"],
+	answer: "double"
+
+ },
+ {
+	question: "Trick question: how much did you enjoy this?",
+	options: ["alot ","loved it","loved it^2","a,b,& c"],
+	answer: "a,b,& c"
+
+ }
+ ]
 "Madrid",
 "San Juan"
 ],
